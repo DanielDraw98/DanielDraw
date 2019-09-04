@@ -3,11 +3,19 @@ using namespace std;
 
 int main()
 {
-	int n;
-	cin >> n;
-	int* a = new
-		int[n];
-	cout << a;
+	char *a=new char[1000];
+	cin.getline(a, 1000);
+	while (*a != 0) {
+		if (*a >= 'a' && *a <= 'z') {
+				*a=*a-32;
+		}
+		/*if (*a >= 'A' && *a <= 'Z') {
+			a--;
+
+		}*/
+		a++;
+	}
+	cout << a<endl;
 }
 
 
